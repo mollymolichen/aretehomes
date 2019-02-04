@@ -1,17 +1,26 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <v-app>
+      <v-content>
+        <v-toolbar color="teal lighten-1" id="toolbar">
+          <h1>AreteHomes</h1>
+          <ul>
+              <v-btn>About</v-btn>
+              <v-btn>Our Story</v-btn>
+              <v-btn>Get Started</v-btn>
+              <v-btn>Contact</v-btn>
+          </ul>
+        </v-toolbar>
+      <v-content>
+    </v-app>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    
   }
 }
 </script>
@@ -24,5 +33,10 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+#toolbar {
+    display: flex;
+    justify-content: flex-end;
 }
 </style>
