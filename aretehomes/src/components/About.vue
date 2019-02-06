@@ -23,6 +23,7 @@
 </template>
 
 <script>
+/* eslint-disable */
 export default {
     name: 'about',
     components: {
@@ -35,7 +36,7 @@ export default {
                     src: "https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg"
                 },
                 {
-                    src: "../assets/carousel2.png"
+                    src: "../assets/house-bkgd.jpg"
                 },
                 {
                     src: "../assets/carousel3.png"
